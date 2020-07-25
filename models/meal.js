@@ -17,6 +17,11 @@ var meal = {
     orm.update("meals", objColVals, condition, function(res) {
       cb(res);
     });
+  },
+  delete: function(condition, cb) {
+    orm.delete("meals", condition, function(res) {
+      cb(res);
+    })
   }
 };
 

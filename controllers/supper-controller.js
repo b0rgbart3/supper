@@ -23,6 +23,15 @@ router.post("/api/meals", function(req, res) {
   });
 });
 
+router.delete("/api/meals/:id", function(req,res) {
+  var condition = "id = " + req.params.id;
+
+  meal.delete( condition, function (result) {
+    res.json({ id: result.insertId });
+  })
+
+});
+
 router.put("/api/meals/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 

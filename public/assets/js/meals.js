@@ -22,6 +22,22 @@ $(function() {
     );
   });
 
+  $(".deleteBtn").on("click", function(event) {
+    var id = $(this).data("id");
+    
+    console.log(id);
+    $.ajax("/api/meals/" + id, {
+      type: "DELETE",
+      data: {}
+    } ).then(
+      function() {
+        console.log("deleted");
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    )
+  });
+
   $(".create-form").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();

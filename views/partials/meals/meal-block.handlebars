@@ -1,7 +1,10 @@
-<li>
+<li class='mealListItem'>
 	{{title}}
 
 	<button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
 		{{#if eaten}}EAT ME!{{else}}MAKE ME AGAIN!{{/if}}
+	</button>
+	<button class='deleteBtn' data-id="{{id}}">
+		Delete this meal
 	</button>
 </li>

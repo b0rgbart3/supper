@@ -4,10 +4,10 @@
 </div>
 
 <div class = 'allmeals group'>
-<div class='mealList'>
+<div class='mealListDiv'>
 <h2>Meals that have not been eaten!</h2>
 
-<ul>
+<ul class='mealList'>
   {{#each meals}}
     {{#unless eaten}}
       {{> meals/meal-block eaten=true}}
@@ -15,10 +15,10 @@
   {{/each}}
 </ul>
 </div>
-<div class='mealList'>
+<div class='mealListDiv'>
 <h2>Meals that have already been eaten!</h2>
 
-<ul>
+<ul class='mealList'>
   {{#each meals}}
     {{#if eaten}}
       {{> meals/meal-block eaten=false}}

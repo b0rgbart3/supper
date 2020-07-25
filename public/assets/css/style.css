@@ -1,0 +1,62 @@
+
+/*  Mobile Styles come first */
+body {
+    margin:0;
+    padding:0%;
+    background-color:#e2bc5a;
+    text-align: center;
+}
+.mealList {
+    display:inline-block;
+    width:90%;
+    box-sizing: border-box;
+    float:none;
+    margin:auto;
+    background-color:white;
+    border-radius:20px;
+    margin-bottom:20px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: left;
+    padding-left:20px;
+    margin-top:20px;
+}
+.allmeals {
+    background-color:rgba(0, 0, 0,.2);
+    border-radius: 0px;
+    width:100%;
+}
+
+/* Styles for Larger screens */
+@media only screen and (min-width:700px) {
+    body {
+        padding:4%;
+    }
+    .mealList {
+        display:inline-block;
+        width:46%;
+        box-sizing: border-box;
+        float:left;
+        margin-right:2%;
+        margin-left:2%;
+    }
+    .allmeals {
+        background-color:rgba(0, 0, 0,.2);
+        border-radius: 20px;
+    }
+}
+
+
+/*  ClearFix  */
+/*  The ClearFix by Tony Aslett and Nicholas Gallagher */
+.group:before,
+.group:after {
+content: "";
+display: table; }
+
+.group:after {
+clear: both; }
+
+.group {
+zoom: 1;
+}

@@ -1,0 +1,11 @@
+<h1>Supper!</h1>
+
+<h2>Meals that have not been eaten!</h2>
+
+<ul>
+  {{#each meals}}
+    {{#unless eaten}}
+      {{> meals/meal-block eaten=true}}
+    {{/unless}}
+  {{/each}}
+</ul>

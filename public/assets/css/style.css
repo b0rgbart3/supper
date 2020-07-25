@@ -33,12 +33,26 @@ body {
     padding:0;
     box-sizing: border-box;
 }
+
+.mealListDiv h2 {
+    padding-left:20px;
+}
 .mealListItem {
     padding:20px;
-    border:2px solid gray;
     box-sizing: border-box;
+    width:90%;
+    margin:auto;
+    margin-bottom:10px;
+    background-color:rgba(181, 170, 155,.5);
+    border-radius:8px;
 }
-
+.addAMealDiv {
+    background-color:black;
+    width:100%;
+    color:white;
+    padding-top:20px;
+    padding-bottom:80px;
+}
 /* Styles for Larger screens */
 @media only screen and (min-width:700px) {
     body {

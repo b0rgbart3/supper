@@ -1,15 +1,34 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-var host = process.env.HOST || "localhost";
+var db_host = process.env.JAWSDB_URL;
+var db_user = process.env.DB_USER;
+var db_pass = process.env.DB_PASS;
+var db_dbase = process.env.DB_DBASE;
 
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: "indiGlow3",
-  database: "supper"
-});
+//var host = process.env.HOST || "localhost";
+var connection;
+
+// If there is a JAWSDB_URL - that means we are on Heroku
+if (db_host) {
+
+  connection = mysql.createConnection({
+    host: db_host,
+    port: 3306,
+    user: db_user,
+    password: db_pass,
+    database: db_dbase
+  });
+} else {
+// Otherwise, we are on our local machine
+  connection = mysql.createConnection({
+    host: 'localhost',
+    port: 3306,
+    user:  db_user,
+    password: db_pass,
+    database: "supper"
+  });
+}
 
 // Make connection.
 connection.connect(function(err) {

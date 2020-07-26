@@ -13,11 +13,11 @@ var connection;
 if (db_host) {
 
   connection = mysql.createConnection({
-    host: db_host,
-    port: 3306,
-    user: db_user,
-    password: db_pass,
-    database: db_dbase
+    host: db_host
+    // port: 3306,
+    // user: db_user,
+    // password: db_pass,
+    // database: db_dbase
   });
 } else {
 // Otherwise, we are on our local machine

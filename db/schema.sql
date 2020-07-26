@@ -1,9 +1,9 @@
 -- Drops the todolist if it exists currently --
-DROP DATABASE IF EXISTS supper;
+/* DROP DATABASE IF EXISTS supper;
 -- Creates the "todolist" database --
 CREATE DATABASE supper;
 
-USE supper;
+USE supper; */
 
 CREATE TABLE meals
 (
@@ -14,6 +14,6 @@ CREATE TABLE meals
 );
 
 
-INSERT INTO meals (title, eaten) VALUES ('Green Garlic Pizza', false);
+/* INSERT INTO meals (title, eaten) VALUES ('Green Garlic Pizza', false);
 INSERT INTO meals (title, eaten) VALUES ('Middleastern Fried Lentils and Rice', false);
-INSERT INTO meals (title, eaten) VALUES ('New Mexican Green Chili Enchiladas', false);
+INSERT INTO meals (title, eaten) VALUES ('New Mexican Green Chili Enchiladas', false); */

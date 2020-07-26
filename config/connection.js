@@ -12,13 +12,7 @@ var connection;
 // If there is a JAWSDB_URL - that means we are on Heroku
 if (db_host) {
 
-  connection = mysql.createConnection({
-    host: db_host
-    // port: 3306,
-    // user: db_user,
-    // password: db_pass,
-    // database: db_dbase
-  });
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
 // Otherwise, we are on our local machine
   connection = mysql.createConnection({

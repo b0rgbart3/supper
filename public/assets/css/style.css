@@ -44,7 +44,7 @@ h1 {
 }
 h2 {
     font-family: "Lobster", cursive;
-    color:rgb(124, 78, 21);
+    color:rgb(57, 40, 19);
     font-size:1.8em;
 }
 
@@ -64,12 +64,31 @@ h2 {
     border-radius:8px;
 }
 .addAMealDiv {
-    background-color:rgba(0,0,0,.85);
+ 
+    background-color:rgba(0, 0, 0,.2);
     width:100%;
     color:white;
     padding-top:20px;
     padding-bottom:80px;
     border-radius:0 0 18px 18px;
+}
+
+.create-form {
+    width:100%;
+    margin:auto;
+    border-radius:8px;
+    padding-bottom:20px;
+    background-color:rgba(255,255,255,.24);
+}
+.form-group {
+    margin-bottom:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.mealTitle {
+    font-size:1.5em;
+    font-weight: bold;
 }
 /* Styles for Larger screens */
 @media only screen and (min-width:700px) {
@@ -85,8 +104,11 @@ h2 {
         margin-left:2%;
     }
     .allmeals {
-        background-color:rgba(0, 0, 0,.2);
+       
         border-radius: 18px 18px 0 0;
+    }
+    .create-form {
+        width:50%;
     }
 }
 

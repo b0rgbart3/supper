@@ -5,10 +5,13 @@ CREATE DATABASE supper;
 
 USE supper; */
 
+DROP TABLE IF EXISTS meals;
+
 CREATE TABLE meals
 (
 	id int NOT NULL AUTO_INCREMENT,
-	title varchar(255) NOT NULL,
+	title varchar(50) NOT NULL,
+	description varchar(400),
 	eaten BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );

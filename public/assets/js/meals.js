@@ -45,6 +45,7 @@ $(function() {
   
     var newMeal = {
       title: $("#meal_title").val().trim(),
+      description: $("#meal_description").val().trim(),
       eaten: $("[name=eaten]:checked").val().trim()
     };
 

@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/meals", function(req, res) {
-  meal.create(["title", "eaten"], [req.body.title, req.body.eaten], function(result) {
+  meal.create(["title", "eaten"], [req.body.title, req.body.description, req.body.eaten], function(result) {
     // Send back the ID of the new meal
     res.json({ id: result.insertId });
   });
